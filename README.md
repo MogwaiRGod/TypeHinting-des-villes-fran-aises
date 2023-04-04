@@ -6,5 +6,4 @@ Diane (MogwaiRGod)
 
 ## Langages
 | JS | PHP | HTML | MySQL |
-
-# Fonctionnement
+|:--:|:--:|:--:|:--:|
