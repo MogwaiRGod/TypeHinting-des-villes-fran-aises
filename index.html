@@ -21,9 +21,13 @@
 
         // à chaque fois que le client a fini de taper quelque chose
         formHint.addEventListener('keyup', function () {
-
-            fetch('utils/hinting.php?zip=' + this.value)
+            
+            // requête fetch (API)
+            fetch('utils/hinting.php?zip=' + this.value /* URL des ressources à récupérer */)
+                /* response : objet Promise.
+                retourne la réponse de la requête HTTP */
                 .then((response) => {
+                    // choix du format de la réponse : ici .text() = chaîne
                     return response.text();
                 })
                 .then((data) => {
